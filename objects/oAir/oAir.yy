@@ -4,20 +4,59 @@
     "mvc": "1.0",
     "name": "oAir",
     "eventList": [
-        
+        {
+            "id": "b2b2ba98-a97d-44b4-a53a-d57c71f48605",
+            "modelName": "GMEvent",
+            "mvc": "1.0",
+            "IsDnD": false,
+            "collisionObjectId": "00000000-0000-0000-0000-000000000000",
+            "enumb": 0,
+            "eventtype": 0,
+            "m_owner": "9a7eec95-57d9-4079-913e-d59c8f256158"
+        },
+        {
+            "id": "82d514fd-00c6-4008-bcc7-1d760fb9ae07",
+            "modelName": "GMEvent",
+            "mvc": "1.0",
+            "IsDnD": false,
+            "collisionObjectId": "00000000-0000-0000-0000-000000000000",
+            "enumb": 0,
+            "eventtype": 3,
+            "m_owner": "9a7eec95-57d9-4079-913e-d59c8f256158"
+        },
+        {
+            "id": "4eeabd39-b50c-4deb-9256-3df5a52d5247",
+            "modelName": "GMEvent",
+            "mvc": "1.0",
+            "IsDnD": false,
+            "collisionObjectId": "9735d3f9-a0a1-4aab-8b3a-1a7e57e19ab3",
+            "enumb": 0,
+            "eventtype": 4,
+            "m_owner": "9a7eec95-57d9-4079-913e-d59c8f256158"
+        },
+        {
+            "id": "897a0864-2372-4252-8c75-54bac7a4fbce",
+            "modelName": "GMEvent",
+            "mvc": "1.0",
+            "IsDnD": false,
+            "collisionObjectId": "937a7327-63b0-4ee8-960d-1a377d109385",
+            "enumb": 0,
+            "eventtype": 4,
+            "m_owner": "9a7eec95-57d9-4079-913e-d59c8f256158"
+        }
     ],
     "maskSpriteId": "00000000-0000-0000-0000-000000000000",
     "overriddenProperties": null,
     "parentObjectId": "00000000-0000-0000-0000-000000000000",
     "persistent": false,
-    "physicsAngularDamping": 0.1,
-    "physicsDensity": 0.5,
+    "physicsAngularDamping": 0,
+    "physicsDensity": 0,
     "physicsFriction": 0.2,
     "physicsGroup": 0,
     "physicsKinematic": false,
-    "physicsLinearDamping": 0.1,
+    "physicsLinearDamping": 0,
     "physicsObject": true,
-    "physicsRestitution": 0.1,
+    "physicsRestitution": 0,
     "physicsSensor": false,
     "physicsShape": 1,
     "physicsShapePoints": [

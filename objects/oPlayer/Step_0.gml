@@ -33,11 +33,14 @@ else
 }
 if (keyboard_check(ord("Z")) && magic <= 0)
 {
-	instance_create_depth(x + 2 * sprite_width * dir, y, 10, oAir);
+	instance_create_depth(x + abs(sprite_width) * dir, y, 10, oAir);
 	magic = 30;
 }
 if(phealth <= 0)
 {
 	instance_destroy(id);
+	room_goto(endGame);
 }
 magic -= 1;
+
+image_xscale = sign(dir);

@@ -4,7 +4,8 @@
     "mvc": "1.1",
     "name": "ed68b90a-a2a7-48ad-b16a-2b167ecfd52d",
     "children": [
-        "d3c79164-be6d-4e37-b33c-bcccf6a1e04a"
+        "2acbd9c5-b27a-4ae3-9bcc-1211012cf46b",
+        "92ccd296-d00e-459e-8cbe-399bcecbc4f7"
     ],
     "filterType": "GMRoom",
     "folderName": "rooms",
