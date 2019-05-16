@@ -1,6 +1,19 @@
-if((keyboard_check(vk_up) || keyboard_check(ord("W"))) && IsOnGround())
-{
-	physics_apply_impulse(x, y, 0, lengthdir_y(30000, -gravity_direction))
+jump_delay -= 1;
+
+if(keyboard_check(vk_up) || keyboard_check(ord("W"))){
+	show_debug_message(jump_delay);
+	if (IsOnGround()){
+		physics_apply_impulse(x, y, 0, lengthdir_y(30000, -gravity_direction));
+		jump_delay = 10;
+	}
+	else if(!was_double_jump && jump_delay <= 0){
+		physics_apply_impulse(x, y, 0, lengthdir_y(15000, -gravity_direction));
+		was_double_jump = true;
+	}
+}
+
+if (IsOnGround()){
+	was_double_jump = false;
 }
 
 
@@ -46,3 +59,7 @@ if (mana_points < mana_limit)
 }
 
 image_xscale = sign(dir);
+
+if (instance_number(oEnemy) <= 0){
+	room_goto_next();
+}
