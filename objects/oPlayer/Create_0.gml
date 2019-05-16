@@ -10,8 +10,6 @@ dir = 1;
 mana_cost = 50;
 
 randomize();
-phy_position_x = irandom_range(100, 1800);
-phy_position_y = irandom_range(70, 500);
-var wall = instance_nearest(phy_position_x, phy_position_y, oWall);
-phy_position_x = wall.phy_position_x;
-phy_position_y = wall.phy_position_y;
+var wall = instance_nearest(irandom_range(100, 1800), irandom_range(70, 500), oWall);
+phy_position_x = wall.phy_position_x + 36;
+phy_position_y = wall.phy_position_y - 64;

@@ -1,6 +1,6 @@
 if((keyboard_check(vk_up) || keyboard_check(ord("W"))) && IsOnGround())
 {
-	physics_apply_impulse(x, y, 0, lengthdir_y(10000, -gravity_direction))
+	physics_apply_impulse(x, y, 0, lengthdir_y(30000, -gravity_direction))
 }
 
 
