@@ -1,0 +1,1 @@
+woodHealth = 10;

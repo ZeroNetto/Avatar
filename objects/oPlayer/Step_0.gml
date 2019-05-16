@@ -1,7 +1,4 @@
-/// @description Insert description here
-// You can write your code in this editor
-
-if(keyboard_check_pressed(vk_space) && place_meeting(x, y + 1, oWall))
+if((keyboard_check(vk_up) || keyboard_check(ord("W"))) && IsOnGround())
 {
 	physics_apply_impulse(x, y, 0, lengthdir_y(10000, -gravity_direction))
 }
@@ -31,16 +28,21 @@ else
 		//image_index = 0;
 	}
 }
-if (keyboard_check(ord("Z")) && magic <= 0)
+if (keyboard_check(ord("Z")) && mana_points >= mana_cost)
 {
 	instance_create_depth(x + abs(sprite_width) * dir, y, 10, oAir);
-	magic = 30;
+	mana_points -= mana_cost;
+	audio_play_sound(airAttack, 1, false);
 }
 if(phealth <= 0)
 {
+	audio_play_sound(lose, 1, false);
 	instance_destroy(id);
 	room_goto(endGame);
 }
-magic -= 1;
+if (mana_points < mana_limit)
+{	
+	mana_points += mana_regen;
+}
 
 image_xscale = sign(dir);
